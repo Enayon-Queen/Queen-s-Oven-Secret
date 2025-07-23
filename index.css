@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+body {
+    background-color: bisque;
+    opacity: inherit;
+}
+
+.para {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+}
+
+.logo {
+    width: 200px;
+}
+.navbar{
+    background-color: aliceblue;
+}
