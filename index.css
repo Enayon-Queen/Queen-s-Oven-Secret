@@ -10,13 +10,18 @@ body {
     opacity: inherit;
 }
 
-.para {
+.nav {
+    background-color: aliceblue;
+}
+
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
-.flexy {
+.navlinks {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,13 +30,15 @@ body {
 }
 
 .logo {
-    width: 200px;
+    width: 100px;
+    border-radius: 30px 25px;
 }
 
-.navbar {
-    background-color: aliceblue;
-}
 
 a {
     text-decoration: none;
+}
+
+section {
+    text-align: left;
 }
