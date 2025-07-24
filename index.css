@@ -27,6 +27,11 @@ body {
 .logo {
     width: 200px;
 }
-.navbar{
+
+.navbar {
     background-color: aliceblue;
+}
+
+a {
+    text-decoration: none;
 }
