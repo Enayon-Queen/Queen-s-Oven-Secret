@@ -12,6 +12,7 @@ body {
 
 .nav {
     background-color: aliceblue;
+    font-family: cursive;
 }
 
 .navbar {
@@ -88,6 +89,7 @@ hr {
 
 .container {
     padding: 20px;
+    text-align: center;
 }
 
 .signupbutton {
@@ -110,6 +112,7 @@ button:hover {
 .page {
     flex-direction: row;
     text-align: center;
+    align-items: center;
 }
 
 .love {
@@ -124,6 +127,11 @@ footer {
 
 .para {
     text-align: center;
+}
+
+.pictures {
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .figure {
@@ -165,10 +173,6 @@ footer {
     border: 2px solid white;
 }
 
-.pictures {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
 
 .cake {
     text-align: center;
@@ -200,6 +204,30 @@ footer {
 .pone {
     text-align: center;
 }
-.gallery{
-    padding: 5%
+
+/*.galle{
+    margin: 20px;
+    text-align: center;
+}*/
+.food {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.equipment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    /*padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 10px;*/
+}
+
+.equip {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
