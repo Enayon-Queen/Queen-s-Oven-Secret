@@ -10,9 +10,17 @@ body {
     opacity: inherit;
 }
 
+.logo {
+    width: 100px;
+    border-radius: 30px 25px;
+    margin: 20px;
+}
+
 .nav {
     background-color: aliceblue;
     font-family: cursive;
+    position: sticky;
+    top: 0;
 }
 
 .navbar {
@@ -20,6 +28,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .navlinks {
@@ -31,16 +40,10 @@ body {
     padding: 15px;
 }
 
-.logo {
-    width: 100px;
-    border-radius: 30px 25px;
-    margin: 20px;
-}
-
-
 a {
     text-decoration: none;
 }
+
 
 hr {
     border: 1px solid white;
@@ -75,17 +78,13 @@ button:hover {
     align-items: center;
 }
 
-.love {
+/*.love {
     flex-direction: row;
     text-align: center;
     align-items: center;
-}
+}*/
 
 footer {
-    text-align: center;
-}
-
-.para {
     text-align: center;
 }
 
@@ -99,10 +98,6 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     margin: 10px;
-    /*padding: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 10px;*/
 }
 
 .fig {
@@ -143,7 +138,6 @@ footer {
     justify-content: space-between;
     background-color: brown;
     padding: 50px 50px;
-    /*border-radius: 25px;*/
     margin: 2px;
     text-align: center;
     align-items: center;
@@ -158,11 +152,7 @@ footer {
     text-align: center;
 }
 
-/*.galle{
-    margin: 20px;
-    text-align: center;
-}*/
-.food {
+.next {
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -178,22 +168,33 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
 
-}
-.school{
-    margin-top: 40px;
-}
-.fa {
-    padding: 10px;
-    font-size: 20px;
-    width: 40px;
-    text-align: center;
-    text-decoration: none;
-}
-.fa:hover {
-    opacity: 0.7;
-}
-.fa-facebook {
-    background-color: blue;
-    color: white;
-}
+    footer {
+        margin-top: 40px;
+        background-color: chocolate;
+    }
+
+    .fa {
+        padding: 10px;
+        font-size: 20px;
+        width: 40px;
+        text-align: right;
+        text-decoration: none;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-youtube {
+        background-color: red;
+        color: grey;
+    }
+
+    .outcome {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px;
+    }
