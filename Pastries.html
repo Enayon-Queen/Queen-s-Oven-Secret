@@ -2,118 +2,439 @@
 <html>
 
 <head>
-    <title>QUEEN'S BAKERIES RECIEPE</title>
-    <link rel="Stylesheet" href="index.css">
+  <title>QUEEN'S BAKERIES RECIEPE</title>
+  <style>
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    /* grid:gives space between the card*/
+    .pastry-container {
+      display: grid;
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .pastry {
+      background: aliceblue;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .pastry h2 {
+      color: #d35400;
+    }
+
+    /* font-weight:make a particular text bold */
+    .section-title {
+      font-weight: bold;
+      margin-top: 10px;
+      color: #34495e;
+    }
+
+    ul,
+    ol {
+      padding-left: 20px;
+    }
+
+    .pass {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  </style>
+  <link rel="Stylesheet" href="index.css">
 </head>
 
 <body>
-    <header class="nav">
-        <nav class="navbar">
-            <img src="./images/Purple Pink Vintage Cake & Pastry Logo.gif" alt="logo" class="logo">
-            <h1>QUEEN'S CAKE & PASTRY</h1>
-            <ul class="navlinks">
-                <li><a href="index.html"><b>Home</b></a></li>
-                <li><a href="Breakfast.html"><b>Breakfast</b></a></li>
-                <li><a href="Cakes.html"><b>Cakes</b></a></li>
-                <li><a href="Cookies.html"><b>Cookies</b></a></li>
-                <li><a href="Desserts.html"><b>Desserts</b></a></li>
-                <li><a href="Pastries.html"><b>pastries</b></a></li>
-                <li><a href="Contact.html"><b>Contact</b></a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1 class="inde">Welcome to the world of pastries!!!</h1>
-    <p>
-        Pastry refers to a variety of doughs, typically made with flour, fat, and water, and also the baked goods made from them. 
-        These baked goods can be sweet or savory and are characterized by their flaky and crumbly texture.
-         Common examples include pies,doughtnut,puff-puff and so on......
-    </p>
-    <section class="inde">
-        <figure>
-            <img src="./images/rolls.jpg" alt="Springroll"></a>
-            <figcaption>SPRING ROLL</figcaption>
-        </figure>
-        <h2 class="inde">INGREDIENT</h2>
-        <p>
-            20 spring roll wrapper,500g minced meat,<br>
-            1 big cabbage,7 medium size carrots,<br>
-            2 medium size onions,2 handful green peas,<br>
-            4 medium size green pepper,salt,vegetable oil,<br>
-            frying pan,seasoned cube,curry,thyme,water
-        </p>
-        <h2 class="inde">HOW TO PREPARE</h2>
-        STEP 1:
-        <p>
-            Wash and slice the carrots,onions,cabbage<br>
-            and green pepper in a seperate plates and<br>
-            set all aside.wash also the green peas.
-        </p>
-        STEP 2:
-        <p>
-            Boil your minced meat with 1 seasoned cube<br>
-            curry and thyme.set it aside.
-        </p>
-        STEP 3:
-        <p>
-            Boil the cabbage till it is soft.then add the<br>
-            carrots and green peas,add 1 seasoned cube and<br>
-            cook until the carrots is soft.Then drain the<br>
-            water out.
-        </p>
-        STEP 4:
-        <p>
-            Heat up some vegetable oil on medium heat.fry<br>
-            the meat.Add curry,thyme and red dry pepper and<br>
-            mix properly.Add the cabbage,carrots,green peas<br>
-            and green pepper.stir fry it and set it aside.
-        </p>
-        STEP 5:
-        <p>
-            mix some 3 teaspoons of flour with hot water in a<br>
-            cup and stir properly with a spoon until it is<br>
-            dissolve.Then set it aside.
-        </p>
-        STEP 6:
-        <P>
-            Spread the spring roll wrapper on a flat surface<br>
-            and fill it with the filling,fold it together<br>
-            and seal the edge with the liquid flour as seen<br>
-            below.
-        </P>
-        STEP 7:
-        <p>
-            Do these for the remaining spring roll.
-        </p>
-        STEP 8:
-        <p>
-            Fry the spring rolls in a dee[p oil until it is<br>
-            brown and crusty.
-        </p>
-        STEP 9:
-        <p>
-            Your Spring roll is raedy.
-        </p>
-        </section>
+  <header class="nav">
+    <nav class="navbar">
+      <img src="./images/Purple Pink Vintage Cake & Pastry Logo.gif" alt="logo" class="logo">
+      <h1>QUEEN'S CAKE & PASTRY</h1>
+      <ul class="navlinks">
+        <li><a href="index.html"><b>Home</b></a></li>
+        <li><a href="Cakes.html"><b>Cakes</b></a></li>
+        <li><a href="Pastries.html"><b>Pastries</b></a></li>
+        <li><a href="Cookies.html"><b>Cookies</b></a></li>
+        <li><a href="Desserts.html"><b>Desserts</b></a></li>
+        <li><a href="Baking tips.html"><b>Baking Tips</b></a></li>
+        <li><a href="Contact.html"><b>Contact</b></a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Welcome to the world of pastries!!!</h1>
+  <p class="pass">
+    Pastry refers to a variety of doughs, as well as the sweet and savoury baked goods made from them.
+    The dough may be accordingly called pastry dough for clarity. Sweetened pastries are often described as baker's
+    confectionery.
+    And can be used in any type of event;these include puffpuff,scotch egg,chinchin and so on....
+  </p>
+  <div class="pastry-container">
+
+    <!-- Meat pie -->
+    <div class="pastry">
+      <h2>Meat Pie</h2>
+      <img src="images/meatpie.jpg" alt="meatpie">
+      <p class="section-title">Ingredients</p>
+      <h3>For the Dough:</h3>
+      <ul>
+        <li>4 cups all-purpose flour</li>
+        <li>1 tsp baking powder</li>
+        <li>1/2 tsp salt</li>
+        <li>250g (1 cup) margarine or butter (cold, cut into cubes)</li>
+        <li>1/2 cup cold water (or as needed)</li>
+        <li>1 egg (for egg wash)</li>
+      </ul>
+      <h3>For the Filling:</h3>
+      <ul>
+        <li>300g minced meat (beef or your choice)</li>
+        <li>2 medium potatoes (peeled and diced small)</li>
+        <li>1 medium carrot (peeled and diced)</li>
+        <li>1 small onion (chopped)</li>
+        <li>1 seasoning cube (Maggi or Knorr)</li>
+        <li>Salt and pepper to taste</li>
+        <li>1 tbsp flour (for thickening)</li>
+        <li>2 tbsp vegetable oil</li>
+        <li>1/4 cup water or stock</li>
+      </ul>
+      <p class="section-title">Preparation:</p>
+      <ol>
+        <li><strong>Make the Filling:</strong> Heat oil in a pan, add onions, and cook until soft. Add minced meat and
+          cook until browned.</li>
+        <li>Add diced carrots and potatoes. Cook for 3–5 minutes, then add seasoning, salt, pepper, and a little water
+          or stock. Simmer until vegetables are soft.</li>
+        <li>Add 1 tablespoon of flour to thicken the mixture. Stir well and set aside to cool completely.</li>
+        <li><strong>Prepare the Dough:</strong> In a large bowl, mix flour, baking powder, and salt. Add cold margarine
+          and rub into the flour until it resembles breadcrumbs.</li>
+        <li>Add cold water a little at a time until it forms a smooth dough. Do not overwork the dough. Cover and let
+          rest for 10 minutes.</li>
+        <li>Preheat oven to 180°C (350°F). Line a baking tray with parchment paper.</li>
+        <li><strong>Shape the Pies:</strong> Roll out the dough on a floured surface. Cut into circles (using a bowl or
+          cutter).</li>
+        <li>Place a spoonful of filling in the center of each circle. Fold over and seal the edges with a fork.</li>
+        <li>Place on the baking tray. Beat 1 egg and brush the tops for a golden finish.</li>
+        <li>Bake for 25–30 minutes or until golden brown. Let cool slightly before serving.</li>
+      </ol>
+    </div>
+
+    <!-- Fish roll -->
+    <div class="pastry">
+      <h2>Fish Roll</h2>
+      <img src="images/fishroll.jpg" alt="fish roll">
+      <p class="section-title">Ingredient</p>
+      <ul>
+        <li>2 cups all-purpose flour</li>
+        <li>1/2 tsp baking powder</li>
+        <li>1/4 cup sugar</li>
+        <li>1/4 tsp salt</li>
+        <li>1/4 cup margarine or butter (softened)</li>
+        <li>1/4 cup water (adjust as needed)</li>
+        <li>1 egg (for the dough)</li>
+        <li>6 boiled eggs (peeled)</li>
+        <li>Vegetable oil for deep frying</li>
+      </ul>
+      <p class="section-title">Preparation:</p>
+      <ol>
+        <li>In a bowl, mix flour, baking powder, sugar, and salt together.</li>
+        <li>Add margarine and mix with fingers until it looks like breadcrumbs.</li>
+        <li>Add one egg and water gradually. Mix until it forms a smooth but firm dough.</li>
+        <li>Divide the dough into portions, depending on the number of boiled eggs.</li>
+        <li>Flatten each dough portion and wrap it around a boiled egg, sealing all edges.</li>
+        <li>Heat oil in a deep pan over medium heat.</li>
+        <li>Fry the wrapped eggs until golden brown and cooked through, turning occasionally.</li>
+        <li>Drain on paper towels and allow to cool slightly before serving.</li>
+      </ol>
+    </div>
+
+    <!-- Egg Roll -->
+    <div class="pastry">
+      <h2>Egg Roll</h2>
+      <img src="images/eggroll.jpg" alt="egg roll">
+      <p class="section-title">Ingredients</p>
+      <ul>
+        <li>2 cups all-purpose flour</li>
+        <li>1/2 tsp baking powder</li>
+        <li>1/4 cup sugar</li>
+        <li>1/4 tsp salt</li>
+        <li>1/4 cup margarine or butter (softened)</li>
+        <li>1/4 cup water (adjust as needed)</li>
+        <li>1 egg (for the dough)</li>
+        <li>6 boiled eggs (peeled)</li>
+        <li>Vegetable oil for deep frying</li>
+      </ul>
+      <p class="section-title">Preparation:</p>
+      <ol>
+        <li>In a bowl, mix flour, baking powder, sugar, and salt together.</li>
+        <li>Add margarine and mix with fingers until it looks like breadcrumbs.</li>
+        <li>Add one egg and water gradually. Mix until it forms a smooth but firm dough.</li>
+        <li>Divide the dough into portions, depending on the number of boiled eggs.</li>
+        <li>Flatten each dough portion and wrap it around a boiled egg, sealing all edges.</li>
+        <li>Heat oil in a deep pan over medium heat.</li>
+        <li>Fry the wrapped eggs until golden brown and cooked through, turning occasionally.</li>
+        <li>Drain on paper towels and allow to cool slightly before serving.</li>
+      </ol>
+    </div>
+
+    <!-- chinchin -->
+    <div class="pastry">
+      <h2>Chinchin</h2>
+      <img src="images/chinchin.jpg" alt="chinchin">
+      <p class="section-title">Ingredients</2>
+      <ul>
+        <li>2 cups all-purpose flour</li>
+        <li>1/4 cup sugar (adjust to taste)</li>
+        <li>1/4 tsp salt</li>
+        <li>1/2 tsp baking powder</li>
+        <li>1/4 cup margarine or butter (softened)</li>
+        <li>1/4 cup milk (or water)</li>
+        <li>1 egg (optional)</li>
+        <li>1/2 tsp nutmeg (optional for flavor)</li>
+        <li>Vegetable oil (for deep frying)</li>
+      </ul>
+      <h2 class="section-title">Preparation:</h2>
+      <ol>
+        <li>In a large bowl, mix the flour, sugar, salt, baking powder, and nutmeg (if using).</li>
+        <li>Add the margarine and mix until crumbly.</li>
+        <li>Add the egg and milk. Mix to form a smooth but firm dough.</li>
+        <li>Roll out the dough on a floured surface to about 1/4 inch thickness.</li>
+        <li>Cut into small squares or strips using a knife or pizza cutter.</li>
+        <li>Heat oil in a deep pan over medium heat.</li>
+        <li>Fry the chinchin in batches until golden brown and crispy.</li>
+        <li>Remove and drain on paper towels.</li>
+        <li>Allow to cool and enjoy!</li>
+      </ol>
+    </div>
+
+    <!-- puff-puff -->
+    <div class="pastry">
+      <h2>Puff-Puff</h2>
+      <img src="images/puffpuff.jpg" alt="puff-puff">
+      <p class="section-title">Ingredients</p>
+      <ul>
+        <li>2 cups all-purpose flour</li>
+        <li>2 teaspoons active dry yeast</li>
+        <li>1/4 cup sugar</li>
+        <li>1/4 teaspoon salt</li>
+        <li>1 1/4 cups lukewarm water</li>
+        <li>Vegetable oil (for deep frying)</li>
+        <li>Optional: a pinch of nutmeg or cinnamon for extra flavor</li>
+      </ul>
+      <p>Preparation:</p>
+      <ol>
+        <li>In a bowl, mix the flour, sugar, salt, and nutmeg (if using).</li>
+        <li>Dissolve the yeast in lukewarm water and let it sit for 5–10 minutes until foamy.</li>
+        <li>Combine the yeast mixture with the flour mixture and stir into a smooth, sticky batter.</li>
+        <li>Cover the bowl with a clean cloth and let it rise in a warm place for 1 hour or until doubled in size.</li>
+        <li>Heat oil in a deep pan over medium heat.</li>
+        <li>Use your hand or a spoon to scoop small portions of the dough into the hot oil.</li>
+        <li>Fry in batches until golden brown, turning occasionally (about 4–6 minutes per batch).</li>
+        <li>Remove and drain on paper towels.</li>
+        <li>Serve warm, optionally dusted with powdered sugar.</li>
+      </ol>
+    </div>
+
+    <!-- coconut chin-chin -->
+    <div class="pastry">
+      <h2>Coconut chin-chin</h2>
+      <img src="images/coconut chinchin.jpg" alt="coconutchinchin">
+      <p class="section-title">Ingredients</p>
+      <ul>
+        <li>2 cups grated fresh coconut (or desiccated coconut)</li>
+        <li>1 cup sweetened condensed milk</li>
+        <li>½ cup granulated sugar</li>
+        <li>1 tsp vanilla extract</li>
+        <li>Optional: a few drops of food coloring (e.g. pink or green)</li>
+        <li>Butter or oil for greasing tray</li>
+      </ul>
+      <p class="section-title">Preparation:</p>
+      <ol>
+        <li>Grease a flat tray or plate and set aside.</li>
+        <li>In a non-stick saucepan, combine the coconut, condensed milk, and sugar.</li>
+        <li>Place over medium heat and stir continuously for about 10–15 minutes, until the mixture thickens and pulls
+          away from the sides of the pan.</li>
+        <li>Add vanilla extract and food coloring (if using), and stir well.</li>
+        <li>Pour the hot mixture into the greased tray and spread evenly.</li>
+        <li>Allow it to cool slightly, then cut into squares while still warm.</li>
+        <li>Let it cool completely before serving or storing in an airtight container.</li>
+      </ol>
+    </div>
+
+    <!-- Buns -->
+    <div class="pastry">
+      <h2>Buns</h2>
+      <img src="images/buns.jpg" alt="buns">
+      <p class="section-title">Ingredients</p>
+      <ul>
+        <li>3 ½ cups (440g) all-purpose flour</li>
+        <li>2 ¼ tsp active dry yeast (1 packet)</li>
+        <li>1 cup (240ml) warm milk</li>
+        <li>¼ cup (50g) sugar</li>
+        <li>1 tsp salt</li>
+        <li>1 large egg</li>
+        <li>⅓ cup (75g) unsalted butter, softened</li>
+        <li>Extra flour for dusting</li>
+      </ul>
+      <p class="section-title">Instructions</p>
+      <ol>
+        <li>In a small bowl, dissolve the yeast in warm milk and let it sit for 5–10 minutes until frothy.</li>
+        <li>In a large mixing bowl, combine flour, sugar, and salt.</li>
+        <li>Add the yeast mixture, egg, and softened butter to the dry ingredients.</li>
+        <li>Knead the dough for about 8-10 minutes until smooth and elastic.</li>
+        <li>Place the dough in a greased bowl, cover with a damp cloth, and let it rise for about 1 hour or until
+          doubled in size.</li>
+        <li>Punch down the dough and divide it into 12 equal portions.</li>
+        <li>Shape each portion into a bun and place on a baking tray lined with parchment paper.</li>
+        <li>Cover and let the buns rise for another 30–40 minutes.</li>
+        <li>Preheat oven to 375°F (190°C). Bake buns for 15-20 minutes or until golden brown.</li>
+        <li>Cool on a wire rack before serving.</li>
+      </ol>
+    </div>
+
+    <!-- suasage roll -->
+    <div class="pastry">
+      <h2>Sausage Roll</h2>
+      <img src="images/suasageroll.jpg" alt="suasage roll">
+      <p class="section-title">Ingredients</p>
+      <ul>
+        <li>500g sausage meat</li>
+        <li>1 sheet of puff pastry (ready-rolled)</li>
+        <li>1 small onion, finely chopped (optional)</li>
+        <li>1 clove garlic, minced</li>
+        <li>1 tsp dried herbs (thyme or sage)</li>
+        <li>1 egg (for egg wash)</li>
+        <li>Salt and pepper to taste</li>
+      </ul>
+      <p class="section-title">Prepartion:</p>
+      <ol>
+        <li>Preheat the oven to 200°C (400°F).</li>
+        <li>In a bowl, mix the sausage meat, onion, garlic, herbs, salt, and pepper.</li>
+        <li>Roll out the puff pastry and cut it in half lengthwise.</li>
+        <li>Place the sausage meat mixture along one edge of each pastry strip.</li>
+        <li>Roll the pastry over the filling and seal the edge with a bit of egg wash.</li>
+        <li>Cut into smaller rolls and place on a baking tray.</li>
+        <li>Brush the tops with egg wash for a golden finish.</li>
+        <li>Bake for 20–25 minutes or until golden brown and cooked through.</li>
+      </ol>
+    </div>
+
+    <!-- coconut chin-chin -->
+    <div class="pastry">
+      <h2>Coconut Chin-Chin</h2>
+      <img src="images/coconut chinchin.jpg" alt="coconutchinchin">
+      <p class="section-title">Ingredients</p>
+      <ul>
+        <li>2 cups all-purpose flour</li>
+        <li>1/2 cup granulated sugar</li>
+        <li>1/2 cup grated or desiccated coconut</li>
+        <li>1/4 cup coconut milk (or water)</li>
+        <li>1/4 cup butter (softened)</li>
+        <li>1/2 teaspoon baking powder</li>
+        <li>1/4 teaspoon salt</li>
+        <li>1 teaspoon vanilla extract (optional)</li>
+        <li>Vegetable oil for deep frying</li>
+      </ul>
+      <p class="section-title">Preparation:</p>
+      <ol>
+        <li>In a large bowl, mix flour, sugar, grated coconut, baking powder, and salt.</li>
+        <li>Add the softened butter and mix until crumbly.</li>
+        <li>Gradually add coconut milk and vanilla (if using) to form a soft but non-sticky dough.</li>
+        <li>On a floured surface, roll out the dough to about 1/4 inch thickness.</li>
+        <li>Cut into small cubes or strips using a knife or cutter.</li>
+        <li>Heat oil in a deep pan over medium heat.</li>
+        <li>Fry the chin chin in batches until golden brown and crisp, stirring occasionally for even cooking.</li>
+        <li>Remove and drain on paper towels. Let cool completely before storing in an airtight container.</li>
+      </ol>
+    </div>
+
+    <!-- Doughnut -->
+    <div class="pastry">
+      <h2>Doughnut</h2>
+      <img src="images/doughtnut.jpg" alt="doughnut">
+      <p class="section-title">Ingredients</p>
+      <ul>
+        <li>2 1/4 teaspoons (1 packet) active dry yeast</li>
+        <li>1/4 cup warm water (about 110°F or 45°C)</li>
+        <li>3/4 cup warm milk</li>
+        <li>1/4 cup granulated sugar</li>
+        <li>1/2 teaspoon salt</li>
+        <li>1 egg</li>
+        <li>1/4 cup unsalted butter, melted</li>
+        <li>2 1/2 cups all-purpose flour</li>
+        <li>Vegetable oil for frying</li>
+        <li>Sugar or glaze for topping (optional)</li>
+      </ul>
+      <p class="section-title">Preparation:</p>
+      <ol>
+        <li>In a small bowl, dissolve yeast in warm water and let it sit for 5-10 minutes until frothy.</li>
+        <li>In a large mixing bowl, combine milk, sugar, salt, egg, melted butter, and the yeast mixture.</li>
+        <li>Gradually add flour, mixing until a dough forms.Knead on a floured surface for about 5 minutes until smooth.
+        </li>
+        <li>Place the dough in a greased bowl, cover, and let rise in a warm place for 1-2 hours until doubled in size.
+        </li>
+        <li>Roll out the dough to about 1/2 inch thickness. Cut with a doughnut cutter or round cookie cutters.</li>
+        <li>Let cut doughnuts rise again for 30-45 minutes until puffy.</li>
+        <li>Heat oil in a deep fryer or large pot to 350°F (175°C).</li>
+        <li>Fry doughnuts for 1-2 minutes per side until golden brown. Remove and drain on paper towels.</li>
+        <li>Dust with sugar or dip in glaze while warm, if desired.</li>
+      </ol>
+    </div>
+
+    <!-- Scotch Egg -->
+    <div class="pastry">
+      <h2>Scotch Egg</h2>
+      <img src="images/scotchegg.jpg" alt="scotchegg">
+      <p class="section-title">Ingredients:</p>
+      <ul>
+        <li>4 large eggs</li>
+        <li>450g (1 lb) sausage meat</li>
+        <li>1 teaspoon mustard (optional)</li>
+        <li>1 tablespoon fresh parsley, chopped</li>
+        <li>Salt and pepper to taste</li>
+        <li>100g (3.5 oz) plain flour</li>
+        <li>2 additional eggs, beaten</li>
+        <li>150g (5 oz) breadcrumbs</li>
+        <li>Vegetable oil for deep frying</li>
+      </ul>
+      <p class="section-title">Preparation:</p>
+      <ol>
+        <li>Boil 4 eggs for 7 minutes, then transfer to cold water, peel and set aside.</li>
+        <li>In a bowl, mix sausage meat with mustard, parsley, salt, and pepper.</li>
+        <li>Divide sausage mix into 4 portions. Flatten each and wrap around each egg completely.</li>
+        <li>Roll each sausage-covered egg in flour, then dip in beaten egg, and coat with breadcrumbs.</li>
+        <li>Heat oil in a deep fryer or deep pan to 170°C (340°F).</li>
+        <li>Fry each Scotch egg for 5–6 minutes or until golden brown and fully cooked.</li>
+        <li>Drain on paper towels. Serve warm or cold.</li>
+      </ol>
+    </div>
+
+    <!-- Pancakes -->
+    <div class="pastry">
+      <h2>Classic Buttermilk Pancakes</h2>
+      <img src="images/pancake.jpg" alt="Classic Buttermilk Pancakes">
+      <p class="section-title">Ingredient</p>
+      <ul>
+        <li>1 cup all-purpose flour</li>
+        <li>1 tbsp sugar</li>
+        <li>1 tsp baking powder</li>
+        <li>1/2 tsp baking soda</li>
+        <li>1/4 tsp salt</li>
+        <li>1 cup buttermilk</li>
+        <li>1 egg</li>
+        <li>2 melted butter</li>
+      </ul>
+      <p class="section-title">Preparation:</p>
+      <ol>
+        <li>Whisk together dry ingredients in a bowl.</li>
+        <li>In another bowl, mix buttermilk, egg, and melted butter.</li>
+        <li>Combine wet and dry ingredients until just mixed.</li>
+        <li>Heat a skillet, lightly grease, and pour 1/4 cup batter.</li>
+        <li>Flip when bubbles form, cook until golden.</li>
+      </ol>
+    </div>
 
 
+</body>
 
-        <!--<figure>
-            <a href="https://www.nibblesbakery.ng" target="_blank">
-                <img src="./images/pastries2.jpg" alt="suasage roll"></a>
-                <figcaption>SUASAGE ROLLS</figcaption>
-        </figure>
-
-        <figure>
-            <a href="https://www.countryfresh.ng" target="_blank">
-             <img src="./images/pastries3.jpg" alt="chin-chin"></a>
-             <figcaption>CHIN-CHIN</figcaption>
-        </figure>
-
-        <figure>
-            <a href="https://www.pastryempire.com" target="_blank">
-                <img src="./images/doughtnut.jpg" alt="doughtnut"></a>
-                <figcaption>DOUGHTNUTS</figcaption>
-        </figure>-->
-    </section>
-    </body>
-    </html>
+</html>

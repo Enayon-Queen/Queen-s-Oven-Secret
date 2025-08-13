@@ -85,6 +85,7 @@ button:hover {
     flex-direction: row;
     text-align: center;
     align-items: center;
+    padding-top: 25px;
 }
 
 
@@ -130,7 +131,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: brown;
+    background-color: white;
     padding: 50px 50px;
     margin: 2px;
     text-align: center;
@@ -145,10 +146,12 @@ button:hover {
 .pone {
     text-align: center;
     font-family: cursive;
+    padding-top: 25px;
+
 }
 .faaq{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .next {
@@ -172,7 +175,7 @@ button:hover {
 footer {
     text-align: center;
     margin-top: 40px;
-    background-color: brown;
+    background-color: lightcoral;
 }
 
 .outcome {
@@ -223,7 +226,7 @@ footer {
 }
 .facebk{
     text-align: center;
-    margin-top: 15px;
+    margin-top: 40px;
 }
 
 .image-container img {
@@ -243,39 +246,10 @@ footer {
     text-align: center;
     margin-top: 30px;
 }
-/*.slide-in-box{
-    width: 300px;
-    color: white;
-    border-radius: 10px;
-    transform: translateX(-100%);
-    transition: transform 1s ease;/*smooth sliding transition
-}
 
-body:hover .slide-in-box{
-    transform: translateX(0);
-}
-.diva {
-    border: 40px solid burlywood;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-input {
-    height: 70px;
-    width: 300px;
-}
-input::placeholder {
-    font-size: larger;
-    align-items: center;
-}*/
-
-.inde{
-    text-align: center;
-    margin-top: 25px;
-}
-.ingre{
-    margin-top: 25px;
-    text-align: center;
-}
+.brown{
+    background-color: white;
+} 
 
 
 
