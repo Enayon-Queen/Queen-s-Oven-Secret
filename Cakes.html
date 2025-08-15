@@ -3,6 +3,50 @@
 
 <head>
     <title>QUEEN'S BAKERIES RECIPES</title>
+    <style>
+        .well {
+            text-align: center;
+            color: #2c3e50;
+            padding-top: 15px;
+        }
+
+        /* grid:gives space between the card*/
+        .pastry-container {
+            display: grid;
+            gap: 50px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .pastry {
+            background: aliceblue;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .pastry h2 {
+            color: #d35400;
+        }
+
+        /* font-weight:make a particular text bold */
+        .section-title {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #34495e;
+        }
+
+        ul,
+        ol {
+            padding-left: 20px;
+        }
+
+        .pass {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin: 15px;
+        }
+    </style>
     <link rel="Stylesheet" href="index.css">
 </head>
 
@@ -16,36 +60,354 @@
                 <li><a href="Cakes.html"><b>Cakes</b></a></li>
                 <li><a href="Pastries.html"><b>Pastries</b></a></li>
                 <li><a href="Cookies.html"><b>Cookies</b></a></li>
-                <li><a href="Desserts.html"><b>Desserts</b></a></li>
+                <li><a href="pancakes.html"><b>Pancakes</b></a></li>
                 <li><a href="Baking tips.html"><b>Baking Tips</b></a></li>
                 <li><a href="Contact.html"><b>Contact</b></a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <figure>
-            <a href="https://www.divacakes.com.ng" target="_blank">
-                <img src="./images/cake1.jpg" alt="cake"></a>
-                <figcaption>CREAM & CHOCOLATE CAKE</figcaption>
-        </figure>
+    <h1 class="well">CAKES</h1>
+    <p class="pass">
+        Cakes are known to be sweet baked,commonly enjoyed for celebrations or as a treat.
+        They come in various forms, from simple to elaborate, and are often decorated with frosting, icing, or other
+        embellishments.
+        Cakes are often made to celebrate special occasions like birthdays or weddings.These includes:red velvet
+        cake,coffee cake,strawbery short cake and so on...
+    </p>
+    <div class="pastry-container">
 
-        <figure>
-            <a href="https://www.fastestcake.com" target="_blank">
-                <img src="./images/cake2.jpg" alt="cake"></a>
-                <figcaption>RAINBOW CAKE</figcaption>
-        </figure>
+        <!-- classic vanilla cake -->
+        <div class="pastry">
+            <h2>Classic Vanilla Cake</h2>
+            <img src="images/vanilla cake.jpg" alt="vanilla cake">
+            <p class="section-title">Ingredients:</p>
+            <ul>
+                <li>2 ½ cups all-purpose flour</li>
+                <li>2 ½ tsp baking powder</li>
+                <li>½ tsp salt</li>
+                <li>¾ cup unsalted butter</li>
+                <li>1 ¾ cups sugar</li>
+                <li>4 large eggs</li>
+                <li>1 tbsp vanilla extract</li>
+                <li>1 cup whole milk</li>
+            </ul>
+            <p class="section-title">Preparation:</p>
+            <ol>
+                <li>Preheat oven to 350°F (175°C). Grease and flour two 9-inch cake pans.</li>
+                <li>Whisk together flour, baking powder, and salt in a bowl.</li>
+                <li>In a separate bowl, cream butter and sugar until fluffy.</li>
+                <li>Add eggs one at a time, mixing well after each. Stir in vanilla.</li>
+                <li>Alternate adding flour mixture and milk to the batter, beginning and ending with flour.</li>
+                <li>Divide batter into pans and bake for 25–30 minutes.</li>
+                <li>Cool for 10 minutes in pans, then remove and cool completely.</li>
+            </ol>
+        </div>
 
-        <figure>
-            <a href="#" target="_blank">
-                <image src="./images/cake4.jpg" alt="cake"></a>
-                    <figcaption>CAKE</figcaption>
-        </figure>
+        <!-- Chocolate Fudge Cake -->
+        <div class="pastry">
+            <h2>Chocolate Fudge Cake</h2>
+            <img src="images/fudge cake.jpg" alt="chocolate fudge cake">
+            <p class="section-title">Ingredients</p>
+            <ul>
+                <li>1 ¾ cups all-purpose flour</li>
+                <li>¾ cup cocoa powder</li>
+                <li>2 cups sugar</li>
+                <li>1 ½ tsp baking powder</li>
+                <li>1 ½ tsp baking soda</li>
+                <li>2 eggs</li>
+                <li>1 cup buttermilk</li>
+                <li>½ cup oil</li>
+                <li>2 tsp vanilla extract</li>
+                <li>1 cup hot coffee</li>
+            </ul>
+            <p class="section-title">Preparation:</p>
+            <ol>
+                <li>Preheat oven to 350°F (175°C). Grease and line two 9-inch pans.</li>
+                <li>Mix flour, cocoa, sugar, baking powder, and baking soda.</li>
+                <li>Whisk in eggs, buttermilk, oil, and vanilla until smooth.</li>
+                <li>Stir in hot coffee; batter will be thin.</li>
+                <li>Pour into pans and bake 30–35 minutes.</li>
+                <li>Cool completely before frosting.</li>
+            </ol>
+        </div>
 
-        <figure>
-            <a href="#" target="_blank">
-                <image src="./images/cake5.jpg" alt="cake"></a>
-                    <figcaption>CAKE</figcaption>
-        </figure>
-    </section>
-    </body>
-    </html>
+        <!-- Red Velvet Cake -->
+        <div class="pastry">
+            <h2>Red Velvet Cake</h2>
+            <img src="images/red velvet.jpg" alt="red velvet">
+            <p class="section-title">Ingredients</p>
+            <ul>
+                <li>2 ½ cups flour</li>
+                <li>1 ½ cups sugar</li>
+                <li>1 tsp baking soda</li>
+                <li>1 tsp cocoa powder</li>
+                <li>1 ½ cups oil</li>
+                <li>1 cup buttermilk</li>
+                <li>2 eggs</li>
+                <li>2 tbsp red food coloring</li>
+                <li>1 tsp vanilla</li>
+                <li>1 tsp vinegar</li>
+            </ul>
+            <p class="section-title">Preparation:</p>
+            <ol>
+                <li>Preheat oven to 350°F (175°C) and grease two cake pans.</li>
+                <li>Mix flour, sugar, baking soda, and cocoa.</li>
+                <li>In another bowl, whisk oil, buttermilk, eggs, food coloring, vanilla, and vinegar.</li>
+                <li>Combine wet and dry ingredients until smooth.</li>
+                <li>Divide into pans and bake 30 minutes.</li>
+                <li>Cool and frost with cream cheese frosting.</li>
+            </ol>
+        </div>
+
+        <!-- Lemon Drizzle Cake -->
+        <div class="pastry">
+            <h2>Lemon Drizzle Cake</h2>
+            <img src="images/lemon drizzle.jpg" alt="lemon drizzle">
+            <p class="section-title">Ingredients</p>
+            <ul>
+                <li>1 ½ cups self-rising flour</li>
+                <li>1 cup sugar</li>
+                <li>½ cup butter</li>
+                <li>2 eggs</li>
+                <li>2 tbsp lemon zest</li>
+                <li>¼ cup lemon juice</li>
+                <li>½ cup milk</li>
+            </ul>
+            <p class="section-title">Preparation:</p>
+            <ol>
+                <li>Preheat oven to 350°F (175°C). Grease a loaf pan.</li>
+                <li>Cream butter and sugar, then add eggs one at a time.</li>
+                <li>Stir in lemon zest and juice.</li>
+                <li>Add flour and milk alternately, mixing until smooth.</li>
+                <li>Bake 40–45 minutes or until golden.</li>
+                <li>Drizzle with more lemon juice and sugar while warm.</li>
+            </ol>
+        </div>
+
+        <!-- Carrot Cake -->
+        <div class="pastry">
+            <h2>Carrot Cake</h2>
+            <img src="images/carrot cake.jpg" alt="carrot cake">
+            <p class="section-title">Ingredients</p>
+            <ul>
+                <li>2 cups flour</li>
+                <li>2 tsp baking soda</li>
+                <li>2 tsp cinnamon</li>
+                <li>½ tsp nutmeg</li>
+                <li>½ tsp salt</li>
+                <li>1 ½ cups sugar</li>
+                <li>1 cup oil</li>
+                <li>4 eggs</li>
+                <li>2 cups grated carrots</li>
+                <li>1 cup crushed pineapple</li>
+                <li>½ cup chopped walnuts</li>
+            </ul>
+            <p class="section-title">Preparation:</p>
+            <ol>
+                <li>Preheat oven to 350°F (175°C). Grease pans.</li>
+                <li>Mix flour, baking soda, cinnamon, nutmeg, and salt.</li>
+                <li>In a large bowl, beat sugar, oil, and eggs.</li>
+                <li>Add dry ingredients, then carrots, pineapple, and nuts.</li>
+                <li>Pour into pans and bake 30–35 minutes.</li>
+                <li>Cool and top with cream cheese frosting.</li>
+            </ol>
+        </div>
+
+        <!-- Banana Cake -->
+        <div class="pastry">
+            <h2>Banana Cake</h2>
+            <img src="images/banana cake.jpg" alt="banana cake">
+            <p class="section-title">Ingredients</p>
+            <ul>
+                <li>2 cups flour</li>
+                <li>1 tsp baking soda</li>
+                <li>¼ tsp salt</li>
+                <li>½ cup butter</li>
+                <li>¾ cup sugar</li>
+                <li>2 eggs</li>
+                <li>1 tsp vanilla</li>
+                <li>1 ½ cups mashed bananas</li>
+                <li>½ cup buttermilk</li>
+            </ul>
+            <p class="section-title">Preparation:</p>
+            <ol>
+                <li>Preheat oven to 350°F (175°C). Grease a 9-inch pan.</li>
+                <li>Cream butter and sugar. Add eggs and vanilla.</li>
+                <li>Mix in mashed bananas and buttermilk.</li>
+                <li>Add flour, baking soda, and salt. Mix until combined.</li>
+                <li>Pour into pan and bake 35–40 minutes.</li>
+                <li>Cool before serving. Optional: top with cream cheese frosting.</li>
+            </ol>
+        </div>
+
+        <!-- Strawberry Shortcake -->
+        <div class="pastry">
+            <h2>Strawberry Shortcake</h2>
+            <img src="images/strawberry shortcake.jpg" alt="strawberry shortcake">
+            <p class="section-title">Ingredients</p>
+            <ul>
+                <li>2 cups flour</li>
+                <li>¼ cup sugar</li>
+                <li>1 tbsp baking powder</li>
+                <li>½ tsp salt</li>
+                <li>½ cup butter</li>
+                <li>2/3 cup milk</li>
+                <li>2 cups strawberries (sliced)</li>
+                <li>Whipped cream</li>
+            </ul>
+            <p class="section-title">Preparation:</p>
+            <ol>
+                <li>Preheat oven to 425°F (220°C). Line a baking sheet.</li>
+                <li>Mix flour, sugar, baking powder, and salt.</li>
+                <li>Cut in butter until crumbly. Add milk to form dough.</li>
+                <li>Roll out and cut into rounds. Bake 12–15 minutes.</li>
+                <li>Split shortcakes, fill with strawberries and whipped cream.</li>
+            </ol>
+        </div>
+
+        <!-- Pineapple Upside-Down Cake -->
+        <div class="pastry">
+            <h2>Pineapple Upside-Down Cake</h2>
+            <img src="images/pineapple upsidedown.jpg" alt="pineapple upsidedown cake">
+            <p class="section-title">Ingredients</p>
+            <ul>
+                <li>¼ cup butter</li>
+                <li>½ cup brown sugar</li>
+                <li>Pineapple slices</li>
+                <li>Maraschino cherries</li>
+                <li>1 ½ cups flour</li>
+                <li>1 tsp baking powder</li>
+                <li>½ tsp salt</li>
+                <li>½ cup butter</li>
+                <li>1 cup sugar</li>
+                <li>2 eggs</li>
+                <li>1 tsp vanilla</li>
+                <li>½ cup milk</li>
+            </ul>
+            <p class="section-title">Preparation:</p>
+            <ol>
+                <li>Preheat oven to 350°F (175°C). Melt butter in a round pan and sprinkle with brown sugar.</li>
+                <li>Arrange pineapple and cherries on top.</li>
+                <li>Mix flour, baking powder, and salt.</li>
+                <li>Cream butter and sugar. Add eggs and vanilla.</li>
+                <li>Add dry ingredients and milk alternately.</li>
+                <li>Pour over fruit. Bake 35–40 minutes. Cool 10 mins then invert.</li>
+            </ol>
+        </div>
+
+        <!-- Coconut Cake -->
+        <div class="pastry">
+            <h2>Coconut Cake</h2>
+            <img src="images/coconut cake.jpg" alt="coconut cake">
+            <p class="section-title">Ingredients</p>
+            <ul>
+                <li>2 ½ cups cake flour</li>
+                <li>1 tbsp baking powder</li>
+                <li>½ tsp salt</li>
+                <li>¾ cup butter</li>
+                <li>1 ¾ cups sugar</li>
+                <li>4 eggs</li>
+                <li>1 tsp coconut extract</li>
+                <li>1 cup coconut milk</li>
+                <li>1 cup shredded coconut</li>
+            </ul>
+            <p class="section-title">Preparation:</p>
+            <ol>
+                <li>Preheat oven to 350°F (175°C). Grease pans.</li>
+                <li>Mix flour, baking powder, and salt.</li>
+                <li>Cream butter and sugar. Add eggs and coconut extract.</li>
+                <li>Alternate adding dry mix and coconut milk.</li>
+                <li>Fold in shredded coconut. Pour into pans.</li>
+                <li>Bake 30–35 minutes. Cool and frost with coconut frosting.</li>
+            </ol>
+        </div>
+
+        <!-- Coffee Cake -->
+        <div class="pastry">
+            <h2>Coffee Cake</h2>
+            <img src="images/coffee cake.jpg" alt="coffee cake">
+            <p class="section-title">Ingredients</p>
+            <ul>
+                <li>2 cups flour</li>
+                <li>1 tbsp baking powder</li>
+                <li>½ tsp salt</li>
+                <li>½ cup butter</li>
+                <li>1 cup sugar</li>
+                <li>2 eggs</li>
+                <li>1 tsp vanilla</li>
+                <li>1 cup sour cream</li>
+                <li>½ cup brown sugar (topping)</li>
+                <li>1 tsp cinnamon (topping)</li>
+            </ul>
+            <p class="section-title">Preparation:</p>
+            <ol>
+                <li>Preheat oven to 350°F (175°C). Grease a 9-inch pan.</li>
+                <li>Mix flour, baking powder, and salt.</li>
+                <li>Cream butter and sugar. Add eggs and vanilla.</li>
+                <li>Mix in dry ingredients and sour cream alternately.</li>
+                <li>Pour half into pan, sprinkle topping, then rest of batter.</li>
+                <li>Bake 35–40 minutes. Cool before slicing.</li>
+            </ol>
+        </div>
+
+        <!-- Marble Cake -->
+        <div class="pastry">
+            <h2>Marble Cake</h2>
+            <img src="images/marble cake.jpg" alt="marble cake">
+            <p class="section-title">Ingredients:</p>
+            <ul>
+                <li>2 cups flour</li>
+                <li>2 tsp baking powder</li>
+                <li>½ tsp salt</li>
+                <li>½ cup butter</li>
+                <li>1 ¼ cups sugar</li>
+                <li>2 eggs</li>
+                <li>1 tsp vanilla</li>
+                <li>1 cup milk</li>
+                <li>¼ cup cocoa powder</li>
+            </ul>
+            <p class="section-title">Preparation:</p>
+            <ol>
+                <li>Preheat oven to 350°F (175°C). Grease a pan.</li>
+                <li>Mix flour, baking powder, salt. Cream butter and sugar.</li>
+                <li>Add eggs and vanilla, mix well. Alternate flour and milk.</li>
+                <li>Split batter in half. Stir cocoa into one half.</li>
+                <li>Spoon both batters alternately in pan and swirl.</li>
+                <li>Bake 40 minutes. Cool before serving.</li>
+            </ol>
+        </div>
+
+        <!-- Funfetti Cake -->
+        <div class="pastry">
+            <img src="images/funfetti cake.jpg" alt="funfetti cake">
+            <h2>Funfetti Cake</h2>
+            <p class="section-title">Ingredients</p>
+            <ul>
+                <li>2 ½ cups flour</li>
+                <li>2 tsp baking powder</li>
+                <li>½ tsp salt</li>
+                <li>¾ cup butter</li>
+                <li>1 ¾ cups sugar</li>
+                <li>4 egg whites</li>
+                <li>1 tsp vanilla</li>
+                <li>1 cup milk</li>
+                <li>½ cup rainbow sprinkles</li>
+            </ul>
+            <p class="section-title">Preparation:</p>
+            <ol>
+                <li>Preheat oven to 350°F (175°C). Grease pans.</li>
+                <li>Mix flour, baking powder, and salt.</li>
+                <li>Cream butter and sugar. Add egg whites and vanilla.</li>
+                <li>Add flour mix and milk alternately.</li>
+                <li>Fold in sprinkles. Pour into pans.</li>
+                <li>Bake 25–30 minutes. Cool and frost as desired.</li>
+            </ol>
+        </div>
+
+        <footer>
+            <b>&copy;2025 QUEEN'S cake & Pastry/Designed & Developed by Enayon Queen</b>
+        </footer>
+
+</body>
+
+</html>

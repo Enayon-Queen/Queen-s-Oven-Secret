@@ -1,3 +1,3 @@
-This is a project am working on building it for my business/skill(Baker)
-it is going to consist of diffrent pictures of cakes and snacks like meat pies,egg roll,chinchin
+This is a project am working on building it for my business/skill(Baker),it is to help young adult who are inspired
+to be a baker,it is going to consist of diffrent pictures of cakes and snacks like meat pies,egg roll,chinchin
 chocolate cakes,redvelvet cake and so on.......
