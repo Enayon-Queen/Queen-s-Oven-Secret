@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <title>QUEEN'S BAKERIES RECIPES</title>
     <link rel="stylesheet" href="index.css">
-
-    <style>
-        html,
+<style>
         body {
             overflow-x: hidden;
         }
@@ -14,12 +16,14 @@
 </head>
 
 <body>
-    <!-- <div class="hamburger" id="hamburger">&#9776;</div> -->
     <header class="nav">
         <nav class="navbar">
             <img src="./images/cake & pastry logo.jpg" alt="logo" class="logo">
-            <h1>QUEEN'S CAKE & PASTRY</h1>
-            <ul class="navlinks" id="navMenu">
+            <h1>QUEEN'S PASTRY RECIPIES</h1>
+
+             <div class="hamburger" id="hamburger">&#9776;</div>
+
+            <ul class="navlinks" id="navlinks">
                 <li><a href="index.html"><b>Home</b></a></li>
                 <li><a href="Cakes.html"><b>Cakes</b></a></li>
                 <li><a href="Pastries.html"><b>Pastries</b></a></li>
@@ -35,12 +39,12 @@
     </h2>
     <hr>
     <p style="text-align: center; font-style: italic; font-size: 1.1em; margin-bottom: 20px;">
-Welcome to <strong>Queen's Cake & Pastry</strong> — where passion meets perfection in every slice.<br>
+Welcome to <strong>Queen's Pastry Recipies</strong> — where passion meets perfection in every slice.<br>
 <br>
         Whether you're celebrating a once-in-a-lifetime event or simply satisfying your sweet cravings,
         you've come to the right place. At Queen's, we blend timeless recipes with modern baking tips
         to create cakes and pastries that not only look stunning but taste unforgettable.
-        Every ingredients is made with love, and care — because you deserve nothing less.
+        Every ingredient is made with love, and care — because you deserve nothing less.
     </p>
 
     <section class="pictures">
@@ -125,11 +129,11 @@ Welcome to <strong>Queen's Cake & Pastry</strong> — where passion meets perfec
         </div>
     </section>
     <hr>
-    <h1 class="figes">Basic Equipments</h1>
+    <h1 class="figes">Basic Equipment</h1>
     <p class="figes">These are basics equipments needed in a baker's Kitchen</p>
-    <section class="next">
-        <div class="equipment">
-            <div class="equip">
+    <br>
+                 <div class="outcome">
+                <div>
                 <figure>
                     <img src="./images/stand mixer.jpg" alt="mixer">
                     <figcaption>STAND MIXER</figcaption>
@@ -240,14 +244,7 @@ Welcome to <strong>Queen's Cake & Pastry</strong> — where passion meets perfec
         &copy; 2025 QUEEN'S Cake & Pastry | Designed & Developed by Enayon Queen
     </footer>
 
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('navMenu');
-
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-    </script>
+    <script src="index.js"></script>
 
 </body>
 

@@ -19,7 +19,6 @@ body {
 
 .nav {
     background-color: aliceblue;
-    font-family: cursive;
     position: sticky;
     top: 0;
     max-width: 100%;
@@ -30,13 +29,12 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .navlinks {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 1.25rem;
     list-style: none;
     padding: 0.9375rem;
@@ -84,14 +82,6 @@ button:hover {
     justify-content: left
 }
 
-/* .page {
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    padding-top: 25px;
-} */
-
-
 .pictures {
     margin-top: 6.25rem;
     margin-bottom: 6.25rem;
@@ -102,6 +92,7 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
     margin: 1.25rem;
+    flex-wrap: wrap;
 }
 
 
@@ -146,34 +137,10 @@ button:hover {
     margin: 1.875rem;
 }
 
-/* .pone {
-    text-align: center;
-    font-family: cursive;
-    padding-top: 25px;
-
-} */
-
 .faaq {
     text-align: center;
     margin-top: 4.375rem;
-}
-
-.next {
-    margin-top: 6.25rem;
-    margin-bottom: 6.25rem;
-}
-
-.equipment {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0.625rem;
-}
-
-.equip {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -190,6 +157,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     margin: 1.875rem;
+    flex-wrap: wrap;
 }
 
 .social-buttons {
@@ -262,26 +230,14 @@ footer {
 
 .brown {
     background-color: white;
-    /* text-align: center;
-    /* padding-top: 15px; */
     padding-bottom: 1.875rem;
-    */
+
 }
 
 
 .ques {
     margin-left: 1.25rem;
 }
-
-/* { */
-/* Media Queries for Mobile
-@media (max-width: 768px) 
-    .navlinks {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    } */
-
 
 #QandA {
     margin-left: 5.25rem;
@@ -293,83 +249,50 @@ footer {
     margin-right: 0.1875rem;
 }
 
-/* === Responsive Design === */
+
 .hamburger {
-    display: none;
+    display: none;  /* hide hamburger on large screens */
     font-size: 28px;
-    background: none;
-    border: none;
-    color: #b2005d;
     cursor: pointer;
-    padding: 10px;
 }
 
-
-/* html
-{
-    max-width: 100%;
-} */
-
-@media(max-width: 768px) {
-
-    html, body
-    {
-        overflow-x: hidden;
-        max-width: 100%;
+@media(max-width:768px) {
+    :root {
+        --font-size-heading: 2rem;
+        --font-size-body: 0.8rem;
+        --spacing: 10px;
     }
-    .navbar {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        /* padding: 10px; */
-        font-size: 20px;
+}
+
+@media(max-width:480px) {
+    :root {
+        --font-size-heading: 1.5rem;
+        --font-size-body: 0.8rem;
+        --spacing: 10px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .navlinks {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: aliceblue;
+       width: 200px;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navlinks.active {
+        display: flex;
     }
 
     .hamburger {
         display: block;
+        /* show hamburger only on smaller screen */
     }
-
-    h1{
-        font-size: 20px;
-    }
-
-    p{
-        font-size: 15px;
-    }
-
-    @media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-}
-    /* === Responsive Design === */
-.hamburger {
-    display: none;
-    font-size: 28px;
-    background: none;
-    border: none;
-    color: #b2005d;
-    cursor: pointer;
-    padding: 10px;
-}
-
-/* .menu{
-    display: none;
-}
-
-.menu.open {
-        display: block;
-    } */
-
-
-
-    /* @media (max-width: 768px) {
-  .navlinks {
-    flex-direction: column;
-    width: 100%;
-    display: none; /* hide by default */
-}
-
-.navlinks.active {
-    display: flex;
-    /* show when active */
 }
