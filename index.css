@@ -324,6 +324,25 @@ footer {
         font-size: 20px;
     }
 
+<<<<<<< HEAD
+=======
+    .hamburger {
+        display: block;
+    }
+
+/* === Responsive Design === */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #b2005d;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+>>>>>>> f9722f2aad1744cbe7e1d88266d89512001910b7
     h1{
         font-size: 20px;
     }
