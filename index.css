@@ -293,7 +293,7 @@ footer {
     margin-right: 0.1875rem;
 }
 
-/* === Responsive Design === 
+/* === Responsive Design === */
 .hamburger {
     display: none;
     font-size: 28px;
@@ -302,7 +302,7 @@ footer {
     color: #b2005d;
     cursor: pointer;
     padding: 10px;
-}*/
+}
 
 
 /* html
@@ -327,18 +327,6 @@ footer {
     .hamburger {
         display: block;
     }
-
-/* === Responsive Design === */
-.hamburger {
-    display: none;
-    font-size: 28px;
-    background: none;
-    border: none;
-    color: #b2005d;
-    cursor: pointer;
-    padding: 10px;
-}
-
 
     h1{
         font-size: 20px;
