@@ -9,6 +9,9 @@ body {
     background-color: pink;
     opacity: inherit;
     font-family: cursive;
+    overflow-x: hidden;
+    /* prevent horizontal overflow */
+
 }
 
 .logo {
@@ -33,6 +36,7 @@ body {
 
 .navlinks {
     display: flex;
+    /* show links in a row */
     flex-direction: row;
     justify-content: space-around;
     gap: 1.25rem;
@@ -74,12 +78,6 @@ hr {
 
 button:hover {
     opacity: 1;
-}
-
-.contain {
-    display: flex;
-    gap: 5.625rem;
-    justify-content: left
 }
 
 .pictures {
@@ -239,19 +237,18 @@ footer {
     margin-left: 1.25rem;
 }
 
-#QandA {
-    margin-left: 5.25rem;
-    margin-right: 12.5rem;
-}
-
+/* Remove heavy left-right margins on desktop */
+#QandA,
 #QANDA {
-    margin-left: 6.0625rem;
-    margin-right: 0.1875rem;
+    margin: 1rem auto;
+    /* centered, small margin */
+    max-width: 90%;
+    /* shrink text inside screen */
 }
-
 
 .hamburger {
-    display: none;  /* hide hamburger on large screens */
+    display: none;
+    /* hide hamburger on large screens */
     font-size: 28px;
     cursor: pointer;
 }
@@ -276,12 +273,14 @@ footer {
 @media (max-width: 768px) {
     .navlinks {
         display: none;
+        /* hide links by default */
         flex-direction: column;
         position: absolute;
         top: 60px;
-        right: 20px;
+        right: 10px;
         background: aliceblue;
-       width: 200px;
+        width: 80%;
+        max-width: 300px;
         border-radius: 10px;
         padding: 10px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -289,10 +288,33 @@ footer {
 
     .navlinks.active {
         display: flex;
+        /* show links when hamburger is clicked */
+    }
+
+    .contain,
+    .caki,
+    .outcome {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .figure {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #QandA,
+    #QANDA {
+        margin: 1rem auto;
+        text-align: center;
+        max-width: 95%;
     }
 
     .hamburger {
         display: block;
         /* show hamburger only on smaller screen */
+        font-size: 28px;
+        cursor: pointer;
     }
 }

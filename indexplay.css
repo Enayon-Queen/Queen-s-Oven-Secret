@@ -1,0 +1,78 @@
+body {
+    background-color: pink;
+    font-family: cursive;
+    overflow-x: hidden; /* prevent horizontal overflow */
+}
+
+/* Remove heavy left-right margins on desktop */
+#QandA, #QANDA {
+    margin: 1rem auto;   /* centered, small margin */
+    max-width: 90%;      /* shrink text inside screen */
+}
+
+.contain {
+    display: flex;
+    gap: 2rem;           /* smaller gap */
+    flex-wrap: wrap;     /* wrap on smaller screens */
+}
+
+.figure, .outcome {
+    display: flex;
+    flex-wrap: wrap;     /* allow items to move to next line */
+    justify-content: center;
+    gap: 1rem;           /* small spacing */
+    margin: 1rem auto;
+    max-width: 95%;
+}
+
+.image-container img,
+.outcome img {
+    max-width: 100%;     /* prevent oversized images */
+    height: auto;
+}
+
+/* Reduce margins on cards */
+.caky {
+    width: 100%; 
+    max-width: 500px; 
+    margin: 1rem auto;
+    padding: 1.5rem;
+}
+
+/* ===== Responsive Fixes ===== */
+@media (max-width: 768px) {
+    .navlinks {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: aliceblue;
+        width: 80%;
+        max-width: 300px;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .navlinks.active {
+        display: flex;
+    }
+
+    .contain, .caki, .outcome {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .figure {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #QandA, #QANDA {
+        margin: 1rem auto;
+        text-align: center;
+        max-width: 95%;
+    }
+}
