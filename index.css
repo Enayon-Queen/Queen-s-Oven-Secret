@@ -58,6 +58,9 @@ a {
     font-family: cursive;
 }
 
+figcaption{
+    margin-left: 10px;
+}
 
 hr {
     border: 0.0625rem solid white;
@@ -157,7 +160,7 @@ footer {
     margin: 1.875rem;
     flex-wrap: wrap;
 }
-
+/* image on the social btn */
 .social-buttons {
     display: flex;
     gap: 0.625rem;
@@ -165,6 +168,7 @@ footer {
     text-align: center;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 /*transition: When you hover over the button, the background color will fade*/
@@ -216,6 +220,7 @@ footer {
 
 }
 
+/* the image pop out when the cursor touches it */
 .image-container img:hover {
     transform: scale(1.1);
     /* Zooms in the image */
@@ -253,17 +258,10 @@ footer {
     cursor: pointer;
 }
 
+/* VARIABLES */
 @media(max-width:768px) {
     :root {
         --font-size-heading: 2rem;
-        --font-size-body: 0.8rem;
-        --spacing: 10px;
-    }
-}
-
-@media(max-width:480px) {
-    :root {
-        --font-size-heading: 1.5rem;
         --font-size-body: 0.8rem;
         --spacing: 10px;
     }
@@ -316,5 +314,14 @@ footer {
         /* show hamburger only on smaller screen */
         font-size: 28px;
         cursor: pointer;
+    }
+}
+
+/* VARIABLES */
+@media(max-width:480px) {
+    :root {
+        --font-size-heading: 1.5rem;
+        --font-size-body: 0.8rem;
+        --spacing: 10px;
     }
 }
