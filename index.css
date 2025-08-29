@@ -160,6 +160,12 @@ footer {
     margin: 1.875rem;
     flex-wrap: wrap;
 }
+
+.social-buttons a i {
+  color: white;   /* makes the icons white */
+  font-size: 1.5rem; /* optional: controls size */
+}
+
 /* image on the social btn */
 .social-buttons {
     display: flex;
