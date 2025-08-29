@@ -318,7 +318,7 @@ footer {
     .hamburger {
         display: block;
         /* show hamburger only on smaller screen */
-        font-size: 28px;
+        font-size: 30px;
         cursor: pointer;
     }
 }
